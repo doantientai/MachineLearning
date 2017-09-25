@@ -36,10 +36,10 @@ def main():
 	#calling CopyImages2
 	# CopyImages(list_test,PATH_TEST,PATH_DEST_TEST)
 
-	list_train = [os.path.join(fn) for fn in next(os.walk(PATH_TRAIN))[2]]
-	# list_test = [os.path.join(PATH_TEST,fn) for fn in next(os.walk(PATH_TEST))[2]]
-	# list_val = [os.path.join(PATH_VAL,fn) for fn in next(os.walk(PATH_VAL))[2]]
-	# list_source = [os.path.join(PATH_SOURCE,fn) for fn in next(os.walk(PATH_SOURCE))[2]]
+	list_train = [fn for fn in next(os.walk(PATH_TRAIN))[2]]
+	list_test = [fn for fn in next(os.walk(PATH_TEST))[2]]
+	list_val = [fn for fn in next(os.walk(PATH_VAL))[2]]
+	list_source = [fn for fn in next(os.walk(PATH_SOURCE))[2]]
 
 	for name in list_train[0:10]:
 		print(name)
