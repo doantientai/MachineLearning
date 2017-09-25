@@ -22,7 +22,7 @@ print("list_source", len(list_source))
 def CopyImages(list_name, path_source, path_dest):
 	#check if dir exist
 	if not os.path.exists(path_dest):
-    	os.makedirs(path_dest)
+		os.makedirs(path_dest)
 	#copy files
 	for a_name in list_name:
 		copyfile(path_source + a_name, path_dest + a_name)
