@@ -34,4 +34,4 @@ def main():
 	print("list_source", len(list_source))
 
 	CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
-	CopyImages(list_test,PATH_TEST,PATH_DEST_TEST
+	CopyImages(list_test,PATH_TEST,PATH_DEST_TEST)
