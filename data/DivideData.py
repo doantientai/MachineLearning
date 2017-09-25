@@ -40,3 +40,6 @@ def main():
 	CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
 	#calling CopyImages2
 	CopyImages(list_test,PATH_TEST,PATH_DEST_TEST)
+
+if __name__ == '__main__':
+    main()
