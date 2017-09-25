@@ -20,6 +20,7 @@ print("list_val", len(list_val))
 print("list_source", len(list_source))
 
 def CopyImages(list_name, path_source, path_dest):
+	print("fired CopyImages")
 	#check if dir exist
 	if not os.path.exists(path_dest):
 		print('path_dest not exits. Creating...')
