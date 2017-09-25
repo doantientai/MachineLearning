@@ -14,10 +14,10 @@ list_test = [os.path.join(PATH_TEST,fn) for fn in next(os.walk(PATH_TEST))[2]]
 list_val = [os.path.join(PATH_VAL,fn) for fn in next(os.walk(PATH_VAL))[2]]
 list_source = [os.path.join(PATH_SOURCE,fn) for fn in next(os.walk(PATH_SOURCE))[2]]
 
-print("list_train", len(list_train))
-print("list_test", len(list_test))
-print("list_val", len(list_val))
-print("list_source", len(list_source))
+# print("list_train", len(list_train))
+# print("list_test", len(list_test))
+# print("list_val", len(list_val))
+# print("list_source", len(list_source))
 
 def CopyImages(list_name, path_source, path_dest):
 	print("fired CopyImages")
@@ -35,6 +35,7 @@ def main():
 	# print("list_test", len(list_test))
 	# print("list_val", len(list_val))
 	# print("list_source", len(list_source))
+	print("main fired!")
 	#calling CopyImages1
 	CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
 	#calling CopyImages2
