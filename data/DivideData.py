@@ -23,7 +23,7 @@ def CopyImages(list_name, path_source, path_dest):
 	for a_name in list_name:
 		copyfile(path_source + a_name, path_dest + a_name)
 
-def main:
+def main():
 	print("list_train", len(list_train))
 	print("list_test", len(list_test))
 	print("list_val", len(list_val))
