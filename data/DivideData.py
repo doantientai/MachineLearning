@@ -1,3 +1,5 @@
+import os
+
 PATH_TRAIN = '/home/tai-databases/CTLymphNodes/PNG/resize_256_gaus50paired/train/'
 PATH_VAL = '/home/tai-databases/CTLymphNodes/PNG/resize_256_gaus50paired/test/'
 PATH_TEST = '/home/tai-databases/CTLymphNodes/PNG/resize_256_gaus50paired/val/'
