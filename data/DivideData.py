@@ -9,11 +9,6 @@ PATH_DEST = '/home/Projects/GANoiseMaker/rival/DnCNN-crisb-DUT/DnCNN-tensorflow/
 PATH_DEST_TRAIN = PATH_DEST + '_train'
 PATH_DEST_TEST = PATH_DEST + '_test'
 
-list_train = [os.path.join(PATH_TRAIN,fn) for fn in next(os.walk(PATH_TRAIN))[2]]
-list_test = [os.path.join(PATH_TEST,fn) for fn in next(os.walk(PATH_TEST))[2]]
-list_val = [os.path.join(PATH_VAL,fn) for fn in next(os.walk(PATH_VAL))[2]]
-list_source = [os.path.join(PATH_SOURCE,fn) for fn in next(os.walk(PATH_SOURCE))[2]]
-
 # print("list_train", len(list_train))
 # print("list_test", len(list_test))
 # print("list_val", len(list_val))
@@ -35,11 +30,19 @@ def main():
 	# print("list_test", len(list_test))
 	# print("list_val", len(list_val))
 	# print("list_source", len(list_source))
-	print("main fired!")
+	# print("main fired!")
 	#calling CopyImages1
-	CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
+	# CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
 	#calling CopyImages2
-	CopyImages(list_test,PATH_TEST,PATH_DEST_TEST)
+	# CopyImages(list_test,PATH_TEST,PATH_DEST_TEST)
+
+	list_train = [os.path.join(PATH_TRAIN,fn) for fn in next(os.walk(PATH_TRAIN))[2]]
+	# list_test = [os.path.join(PATH_TEST,fn) for fn in next(os.walk(PATH_TEST))[2]]
+	# list_val = [os.path.join(PATH_VAL,fn) for fn in next(os.walk(PATH_VAL))[2]]
+	# list_source = [os.path.join(PATH_SOURCE,fn) for fn in next(os.walk(PATH_SOURCE))[2]]
+
+	for name in list_train[0:10]:
+		print(name)
 
 if __name__ == '__main__':
     main()
