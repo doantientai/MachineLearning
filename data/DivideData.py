@@ -6,8 +6,8 @@ PATH_VAL = '/home/tai-databases/CTLymphNodes/PNG/resize_256_gaus50paired/test/'
 PATH_TEST = '/home/tai-databases/CTLymphNodes/PNG/resize_256_gaus50paired/val/'
 PATH_SOURCE = '/home/tai-databases/CTLymphNodes/PNG/resize_256'
 PATH_DEST = '/home/Projects/GANoiseMaker/rival/DnCNN-crisb-DUT/DnCNN-tensorflow/data/CTLymphNodes_256'
-PATH_DEST_TRAIN = PATH_DEST + '_train'
-PATH_DEST_TEST = PATH_DEST + '_test'
+PATH_DEST_TRAIN = PATH_DEST + '_train/'
+PATH_DEST_TEST = PATH_DEST + '_test/'
 
 # print("list_train", len(list_train))
 # print("list_test", len(list_test))
