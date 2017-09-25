@@ -31,10 +31,11 @@ def CopyImages(list_name, path_source, path_dest):
 		copyfile(path_source + a_name, path_dest + a_name)
 
 def main():
-	print("list_train", len(list_train))
-	print("list_test", len(list_test))
-	print("list_val", len(list_val))
-	print("list_source", len(list_source))
-
+	# print("list_train", len(list_train))
+	# print("list_test", len(list_test))
+	# print("list_val", len(list_val))
+	# print("list_source", len(list_source))
+	#calling CopyImages1
 	CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
+	#calling CopyImages2
 	CopyImages(list_test,PATH_TEST,PATH_DEST_TEST)
