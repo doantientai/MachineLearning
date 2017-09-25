@@ -20,6 +20,10 @@ print("list_val", len(list_val))
 print("list_source", len(list_source))
 
 def CopyImages(list_name, path_source, path_dest):
+	#check if dir exist
+	if not os.path.exists(path_dest):
+    	os.makedirs(path_dest)
+	#copy files
 	for a_name in list_name:
 		copyfile(path_source + a_name, path_dest + a_name)
 
@@ -28,3 +32,6 @@ def main():
 	print("list_test", len(list_test))
 	print("list_val", len(list_val))
 	print("list_source", len(list_source))
+
+	CopyImages(list_train,PATH_TRAIN,PATH_DEST_TRAIN)
+	CopyImages(list_test,PATH_TEST,PATH_DEST_TEST
